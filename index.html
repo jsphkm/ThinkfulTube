@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ThinkfulTube</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header role='banner'>
+      <div class='headercontainer'>
+        <div class='thinkfultubelogo'>
+          <img class='logoimg' src='img/thinkfultubeicon.min.svg' alt='ThinkfulTube'/>
+        </div>
+        <form role='form' action="#" class="search-form">
+          <label for="query"></label>
+          <input type="text" class="queryinput" placeholder="Search" aria-label="Search">
+          <button role='button' type="submit" value="Search"><img class='mglassimg' src='img/searchicon.min.svg' alt='Search'/></button>
+        </form>
+      </div>
+    </header>
+    <main role='main'>
+      <div class='maincontainer'>
+        <div class="search-results"></div>
+      </div>
+    </main>
+    <script type="text/javascript" src='index.js'></script>
+  </body>
+</html>
