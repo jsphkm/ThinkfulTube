@@ -29,7 +29,8 @@ function getDataFromApi(searchTerm, callback) {
 
 function displayYoutubeSearchData(data) {
   const results = data.items.map((item, index) => generateResultElements(item));
-  $('.search-results').html(generateResultContainer())
+  $('main').prop('hidden', false);
+  $('.search-results').html(generateResultContainer());
   $('.resultlisting').html(results);
 }
 
@@ -71,7 +72,7 @@ function generateResultElements(result) {
           </a>
         </div>
         <div class='videoDescription'>
-          <a class='videoDescriptionlink' href='http://www.youtube.com/watch?v=${result.id.videoId}' aria-label='${result.snippet.title}'>
+          <a class='videoDescriptionlink' href='http://www.youtube.com/watch?v=${result.id.videoId}' aria-label='${result.snippet.description}'>
             ${result.snippet.description}
           </a>
         </div>

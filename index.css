@@ -12,6 +12,7 @@ html, body {
 body, header {
   margin: 0;
   min-width: 418px;
+  background-color: #f9f9f9;
 }
 
 a {
@@ -36,6 +37,7 @@ h1 {
 }
 
 header {
+  background-color: white;
   z-index: 1;
   background-color: white;
   position: fixed;
